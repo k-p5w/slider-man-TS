@@ -2,11 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+import Viewer from './Viewer';
 
+import * as serviceWorker from './serviceWorker';
+// UI推奨fontの読み出し
+import 'typeface-roboto';
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <div>
+    <Viewer />    
+    </div>
+    
+    <footer>skill store.</footer>
   </React.StrictMode>,
   document.getElementById('root')
 );
